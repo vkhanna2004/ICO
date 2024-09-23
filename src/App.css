@@ -1,0 +1,15 @@
+.body {
+    aspect-ratio: auto;
+    background-color: #0a0a0a;
+    background-image: url("https://cdn.prod.website-files.com/66c6315db14a60029726a2ed/66ca01ff1bdaa35711840e1c_mobi%402-349x1080.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: cover;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: auto;
+    margin-bottom: 0;
+    display: flex;
+    overflow: visible;
+  }
