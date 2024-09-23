@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'; 
-import {Header,Home,Benefits, HowItWorks, Faq} from './components/index.js'; 
+import {Header,Home,Benefits, HowItWorks, Faq,SubscribingForm, Team,Footer} from './components/index.js'; 
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -36,8 +36,13 @@ function App() {
         <Home />
         <Benefits/>
         <HowItWorks/>
+        <Team/>
         <Faq/>
+        <SubscribingForm/>
+        
       </main>
+
+      <Footer/>
     </div>
   );
 }
