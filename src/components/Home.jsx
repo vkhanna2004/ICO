@@ -1,10 +1,15 @@
 import React from "react";
-
+import bgImage from '../images/bg.jpg'
 function Home() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center w-full h-screen bg-[#0C0C0C]"
+      className="flex items-center justify-center w-full h-screen "
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <div className="container px-4 md:px-4 text-center">
         <div className="space-y-4">

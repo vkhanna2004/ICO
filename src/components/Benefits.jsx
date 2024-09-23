@@ -1,5 +1,5 @@
 import React from "react";
-import { BadgeCheck, Zap, Music } from "lucide-react"; 
+import { BadgeCheck, Zap, Music } from "lucide-react";
 
 function Benefits() {
   return (

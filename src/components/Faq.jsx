@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react"; // You can use any icon library or even an SVG
+import { ChevronDown } from "lucide-react"; 
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -13,7 +13,7 @@ function FAQ() {
   };
 
   return (
-    <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-[#0C0C0C]">
+    <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-[#0C0C0C] ">
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-[#f5c843]">
           Frequently Asked Questions
@@ -47,7 +47,7 @@ function FAQ() {
   );
 }
 
-// Sample FAQ data
+//FAQ data
 const faqData = [
   {
     question: "What is a Music NFT?",

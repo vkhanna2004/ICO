@@ -2,7 +2,7 @@ import React from "react";
 
 function HowItWorks() {
   return (
-    <section id="howItWorks" className="w-full py-12 md:py-24 lg:py-32 bg-[#0C0C0C]/90">
+    <section id="howItWorks" className="w-full py-12 md:py-24 lg:py-32 bg-[#0C0C0C]">
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-[#f5c843]">
           How It Works

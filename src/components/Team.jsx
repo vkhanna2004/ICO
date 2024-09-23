@@ -11,7 +11,7 @@ function Team() {
   };
 
   return (
-    <div className="w-full text-center">
+    <div className="w-full text-center bg-[#0C0C0C]">
       <div className="container flex flex-col-reverse md:flex-row items-center justify-between py-10 md:px-20 px-6">
         <div className="w-[300px] h-[300px] flex-shrink-0 mb-6 md:mb-0 mx-auto md:mx-0 md:mr-12">
           <img

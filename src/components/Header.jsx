@@ -54,7 +54,6 @@ function Header({ activeSection }) {
           FAQ
         </a>
 
-        {/* Add more links as needed */}
       </nav>
     </header>
   );
