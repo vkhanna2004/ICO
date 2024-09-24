@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'; 
-import {Header,Home,Benefits, HowItWorks, Faq,SubscribingForm, Team,Footer} from './components/index.js'; 
+import {Header,Home,Benefits, Faq,SubscribingForm, Team,Footer,Dashboard,Roadmap} from './components/index.js'; 
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -35,11 +35,10 @@ function App() {
       <main className="flex-1">
         <Home />
         <Benefits/>
-        <HowItWorks/>
+        <Roadmap/>
         <Team/>
         <Faq/>
         <SubscribingForm/>
-        
       </main>
 
       <Footer/>

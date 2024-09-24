@@ -31,6 +31,22 @@ function Header({ activeSection }) {
         </a>
         <a
           className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === 'home' ? 'text-[#f5c843]' : 'text-gray-400'
+          }`}
+          href="#home"
+        >
+          Marketplace
+        </a>
+        <a
+          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === 'home' ? 'text-[#f5c843]' : 'text-gray-400'
+          }`}
+          href="#home"
+        >
+          Stats
+        </a>
+        <a
+          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
             activeSection === 'benefits' ? 'text-[#f5c843]' : 'text-gray-400'
           }`}
           href="#benefits"
@@ -39,11 +55,11 @@ function Header({ activeSection }) {
         </a>
         <a
           className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'howItWorks' ? 'text-[#f5c843]' : 'text-gray-400'
+            activeSection === 'roadmap' ? 'text-[#f5c843]' : 'text-gray-400'
           }`}
-          href="#howItWorks"
+          href="#roadmap"
         >
-          How it works?
+          Roadmap
         </a>
         <a
           className={`text-l font-medium hover:text-[#f5c843] transition-colors ${

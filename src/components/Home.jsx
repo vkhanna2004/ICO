@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from '../images/bg.jpg'
+import bgImage from "../images/bg.jpg";
 function Home() {
   return (
     <section
@@ -7,8 +7,8 @@ function Home() {
       className="flex items-center justify-center w-full h-screen "
       style={{
         backgroundImage: `url(${bgImage})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       <div className="container px-4 md:px-4 text-center">
