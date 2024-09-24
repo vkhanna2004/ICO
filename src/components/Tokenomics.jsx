@@ -33,7 +33,7 @@ export default function Tokenomics() {
       <div className="min-h-screen bg-gradient-to-b from-[#0C0C0C] to-[#1a1a1a] text-[#f5c843] p-8">
         <h1 className="text-4xl font-bold mb-8 text-center">Tokenomics</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-          <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+          <Card className=" border-2 border-[#f5c843] overflow-hidden">
             <CardHeader className="bg-[#e2b636] text-[#0C0C0C]">
               <CardTitle className="flex items-center">
                 <PieChartIcon className="mr-2" /> Token Distribution
