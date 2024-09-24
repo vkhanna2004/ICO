@@ -7,6 +7,8 @@ import SubscribingForm from "./SubscribingForm";
 import Team from "./Team";
 import Dashboard from "./Dashboard";
 import Roadmap from "./Roadmap";
+import Tokenomics from "./Tokenomics";
+import Stats from "./Stats";
 export {
   Header,
   Home,
@@ -16,5 +18,7 @@ export {
   SubscribingForm,
   Team,
   Dashboard,
-  Roadmap
+  Roadmap,
+  Tokenomics,
+  Stats
 };

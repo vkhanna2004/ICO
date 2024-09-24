@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function Header({ activeSection }) {
   return (
@@ -18,58 +18,75 @@ function Header({ activeSection }) {
             d="M9 19V6l12-2v13M9 10l12-2"
           />
         </svg>
-        <span className="ml-2 text-2xl font-bold text-[#f5c843]">MAD OVER MUSIC</span>
+        <span className="ml-2 text-2xl font-bold text-[#f5c843]">
+          MAD OVER MUSIC
+        </span>
       </a>
       <nav className="ml-auto flex gap-4 sm:gap-6">
         <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'home' ? 'text-[#f5c843]' : 'text-gray-400'
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "home" ? "text-[#f5c843]" : "text-gray-400"
           }`}
           href="#home"
         >
           Home
         </a>
         <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'home' ? 'text-[#f5c843]' : 'text-gray-400'
-          }`}
-          href="#home"
-        >
-          Marketplace
-        </a>
-        <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'home' ? 'text-[#f5c843]' : 'text-gray-400'
-          }`}
-          href="#home"
-        >
-          Stats
-        </a>
-        <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'benefits' ? 'text-[#f5c843]' : 'text-gray-400'
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "benefits" ? "text-[#f5c843]" : "text-gray-400"
           }`}
           href="#benefits"
         >
           Benefits
         </a>
         <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'roadmap' ? 'text-[#f5c843]' : 'text-gray-400'
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "roadmap" ? "text-[#f5c843]" : "text-gray-400"
           }`}
           href="#roadmap"
         >
           Roadmap
         </a>
         <a
-          className={`text-l font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === 'faq' ? 'text-[#f5c843]' : 'text-gray-400'
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "faq" ? "text-[#f5c843]" : "text-gray-400"
           }`}
           href="#faq"
         >
           FAQ
         </a>
-
+        <a
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "marketplace" ? "text-[#f5c843]" : "text-gray-400"
+          }`}
+          href="#marketplace"
+        >
+          Marketplace
+        </a>
+        <a
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "stats" ? "text-[#f5c843]" : "text-gray-400"
+          }`}
+          href="#stats"
+        >
+          Stats
+        </a>
+        <a
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "tokenomics" ? "text-[#f5c843]" : "text-gray-400"
+          }`}
+          href="#tokenomics"
+        >
+          Tokenomics
+        </a>
+        <a
+          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
+            activeSection === "community" ? "text-[#f5c843]" : "text-gray-400"
+          }`}
+          href="#community"
+        >
+          Community
+        </a>
       </nav>
     </header>
   );
