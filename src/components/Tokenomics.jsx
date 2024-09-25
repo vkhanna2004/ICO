@@ -1,8 +1,33 @@
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
-import {PieChart,Pie,Cell,ResponsiveContainer,Tooltip,BarChart,Bar,XAxis,YAxis,} from "recharts";
+import {
+  PieChart,
+  Pie,
+  Cell,
+  ResponsiveContainer,
+  Tooltip,
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+} from "recharts";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/Tabs";
-import {Table,TableBody,TableCell,TableCellHeader,TableHeader,TableRow,} from "./ui/Table";
-import {Coins,Users,TrendingUp,Zap,Lock,BarChart3,PieChart as PieChartIcon,} from "lucide-react";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableCellHeader,
+  TableHeader,
+  TableRow,
+} from "./ui/Table";
+import {
+  Coins,
+  Users,
+  TrendingUp,
+  Zap,
+  Lock,
+  BarChart3,
+  PieChart as PieChartIcon,
+} from "lucide-react";
 
 export default function Tokenomics() {
   const tokenDistribution = [
@@ -30,7 +55,7 @@ export default function Tokenomics() {
 
   return (
     <section id="tokenomics">
-      <div className="min-h-screen bg-gradient-to-b from-[#0C0C0C] to-[#1a1a1a] text-[#f5c843] p-8">
+      <div className="min-h-screen bg-[#0C0C0C] text-[#f5c843] p-8">
         <h1 className="text-4xl font-bold mb-8 text-center">Tokenomics</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           <Card className=" border-2 border-[#f5c843] overflow-hidden">
@@ -39,7 +64,7 @@ export default function Tokenomics() {
                 <PieChartIcon className="mr-2" /> Token Distribution
               </CardTitle>
             </CardHeader>
-            <CardContent className="pt-6 bg-zinc-800">
+            <CardContent className="pt-6 bg-[#1a1a1a]">
               <ResponsiveContainer width="100%" height={300}>
                 <PieChart>
                   <Pie
@@ -69,13 +94,14 @@ export default function Tokenomics() {
               </ResponsiveContainer>
             </CardContent>
           </Card>
-          <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+
+          <Card className="bg-[#1a1a1a] border-2 border-[#f5c843] overflow-hidden">
             <CardHeader className="bg-[#e2b636] text-[#0C0C0C]">
               <CardTitle className="flex items-center">
                 <Coins className="mr-2" /> Token Details
               </CardTitle>
             </CardHeader>
-            <CardContent className="bg-zinc-800">
+            <CardContent className="bg-[#1a1a1a] h-full">
               <ul className="space-y-4 mt-4 ">
                 <li className="flex items-center">
                   <Coins className="mr-2 text-[#f5c843]" />
@@ -120,13 +146,13 @@ export default function Tokenomics() {
 
         <Tabs defaultValue="financial-model" className="w-full">
           <TabsContent value="financial-model" className="mb-8">
-            <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+            <Card className="border-2 border-[#f5c843] overflow-hidden">
               <CardHeader className="bg-[#d1a42a] text-[#0C0C0C]">
                 <CardTitle className="flex items-center">
                   <BarChart3 className="mr-2" /> Financial Model
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-[#1a1a1a]">
                 <p className="mb-4 mt-4">
                   Our financial model is designed to create value for all
                   stakeholders in the ecosystem:
@@ -169,12 +195,32 @@ export default function Tokenomics() {
                       Token Utility Breakdown
                     </h3>
                     <ResponsiveContainer width="100%" height={200}>
-                      <BarChart data={tokenUtility}>
-                        <XAxis dataKey="name" />
+                      <BarChart
+                        data={tokenUtility}
+                        margin={{ top: 20, right: 30, left: 20, bottom: 60 }} 
+                      >
+                        <XAxis
+                          dataKey="name"
+                          angle={-45}
+                          textAnchor="end"
+                          interval={0}
+                          tick={{ fontSize: 12, fill: "#f5c843" }} 
+                        />
                         <YAxis />
-                        <Bar dataKey="value" fill="#f5c843">
+                        <Bar dataKey="value">
                           {tokenUtility.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill="#f5c843" />
+                            <Cell
+                              key={`cell-${index}`}
+                              fill={
+                                [
+                                  "#f5c843",
+                                  "#4a9fff",
+                                  "#50c878",
+                                  "#ff6b6b",
+                                  "#9b59b6",
+                                ][index % 5]
+                              }
+                            />
                           ))}
                         </Bar>
                       </BarChart>
@@ -185,13 +231,13 @@ export default function Tokenomics() {
             </Card>
           </TabsContent>
           <TabsContent value="incentives" className="mb-8">
-            <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+            <Card className=" border-2 border-[#f5c843] overflow-hidden">
               <CardHeader className="bg-[#d1a42a] text-[#0C0C0C]">
                 <CardTitle className="flex items-center">
                   <Zap className="mr-2" /> Incentives
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-[#1a1a1a]">
                 <p>
                   Our platform offers various incentives to encourage community
                   participation and support. Key incentives include:
@@ -206,13 +252,13 @@ export default function Tokenomics() {
             </Card>
           </TabsContent>
           <TabsContent value="nft-value" className="mb-8">
-            <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+            <Card className="border-2 border-[#f5c843] overflow-hidden">
               <CardHeader className="bg-[#e2b636] text-[#0C0C0C]">
                 <CardTitle className="flex items-center">
                   <Lock className="mr-2" /> NFT Value
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-[#1a1a1a]">
                 <p>Our NFTs derive value from several factors, including:</p>
                 <ul className="list-disc ml-6 mt-4">
                   <li>Rarity and uniqueness of each NFT</li>
@@ -223,14 +269,14 @@ export default function Tokenomics() {
               </CardContent>
             </Card>
           </TabsContent>
-          <TabsContent value="token-utility" className="mb-8">
-            <Card className="bg-zinc-800 border-2 border-[#f5c843] overflow-hidden">
+          <TabsContent value="token-utility" className="mb-8 ">
+            <Card className=" border-2 border-[#f5c843] overflow-hidden">
               <CardHeader className="bg-[#e2b636] text-[#0C0C0C]">
                 <CardTitle className="flex items-center">
                   <BarChart className="mr-2" /> Token Utility
                 </CardTitle>
               </CardHeader>
-              <CardContent>
+              <CardContent className="bg-[#1a1a1a]">
                 <p>The utility of our token within the ecosystem includes:</p>
                 <Table>
                   <TableHeader>

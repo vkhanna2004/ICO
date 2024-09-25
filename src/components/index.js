@@ -9,6 +9,8 @@ import Dashboard from "./Dashboard";
 import Roadmap from "./Roadmap";
 import Tokenomics from "./Tokenomics";
 import Stats from "./Stats";
+import Marketplace from "./Marketplace";
+import Community from "./Community";
 export {
   Header,
   Home,
@@ -20,5 +22,7 @@ export {
   Dashboard,
   Roadmap,
   Tokenomics,
-  Stats
+  Stats,
+  Marketplace,
+  Community,
 };

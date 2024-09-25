@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 export function Tabs({ value, onValueChange, children }) {
   return <div>{children}</div>;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'; 
-import {Header,Home,Benefits, Faq,SubscribingForm, Team,Footer,Dashboard,Roadmap} from './components/index.js'; 
+import {Header,Home,Benefits, Faq,SubscribingForm, Team,Footer,Roadmap,Tokenomics, Stats,Dashboard} from './components/index.js'; 
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -9,7 +9,7 @@ function App() {
     const sections = document.querySelectorAll('section');
     const options = {
       root: null,
-      threshold: 0.6,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -36,9 +36,12 @@ function App() {
         <Home />
         <Benefits/>
         <Roadmap/>
-        <Team/>
         <Faq/>
+        {/* <Tokenomics/> */}
+        <Stats/>
+        <Team/>
         <SubscribingForm/>
+
       </main>
 
       <Footer/>
