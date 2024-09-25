@@ -6,10 +6,6 @@ import Footer from "./Footer";
 import SubscribingForm from "./SubscribingForm";
 import Team from "./Team";
 import Roadmap from "./Roadmap";
-import Tokenomics from "./Tokenomics";
-import Stats from "./Stats";
-import Marketplace from "./Marketplace";
-import Community from "./Community";
 export {
   Header,
   Home,
@@ -19,8 +15,4 @@ export {
   SubscribingForm,
   Team,
   Roadmap,
-  Tokenomics,
-  Stats,
-  Marketplace,
-  Community,
 };

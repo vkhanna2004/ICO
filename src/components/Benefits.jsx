@@ -51,8 +51,6 @@ function Benefits() {
       {/* How It Works */}
       <section
       className="flex items-center justify-center w-full pt-4 md:pt-8 pb-10 md:pb-14 bg-[#0C0C0C] min-h-[40vh] sm:min-h-[50vh]"
-
-
       >
         <div className="container px-4 md:px-6 mx-auto">
           <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl text-center mb-4 text-[#f5c843]">

@@ -1,9 +1,21 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
-function Header({ activeSection }) {
+const Header = () => {
+  const location = useLocation();
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <header className="sticky top-0 z-50 bg-[#0C0C0C] px-4 lg:px-6 h-14 flex items-center border-b border-[#f5c843]/20">
-      <a className="flex items-center justify-center" href="#">
+      <Link className="flex items-center justify-center" to="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-6 w-6 text-[#f5c843]"
@@ -21,75 +33,79 @@ function Header({ activeSection }) {
         <span className="ml-2 text-2xl font-bold text-[#f5c843]">
           MAD OVER MUSIC
         </span>
-      </a>
+      </Link>
+
       <nav className="ml-auto flex gap-4 sm:gap-6">
-        <a
+        <Link
+          to="/"
           className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "home" ? "text-[#f5c843]" : "text-gray-400"
+            isActive("/") ? "text-[#f5c843]" : "text-gray-400"
           }`}
-          href="#home"
         >
           Home
-        </a>
-        <a
+        </Link>
+
+        {location.pathname === "/" && (
+          <>
+            <a
+              href="#benefits"
+              onClick={() => scrollToSection("benefits")}
+              className="text-lg font-medium hover:text-[#f5c843] transition-colors text-gray-400"
+            >
+              Benefits
+            </a>
+            <a
+              href="#roadmap"
+              onClick={() => scrollToSection("roadmap")}
+              className="text-lg font-medium hover:text-[#f5c843] transition-colors text-gray-400"
+            >
+              Roadmap
+            </a>
+            <a
+              href="#faq"
+              onClick={() => scrollToSection("faq")}
+              className="text-lg font-medium hover:text-[#f5c843] transition-colors text-gray-400"
+            >
+              FAQ
+            </a>
+          </>
+        )}
+
+        <Link
+          to="/marketplace"
           className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "benefits" ? "text-[#f5c843]" : "text-gray-400"
+            isActive("/marketplace") ? "text-[#f5c843]" : "text-gray-400"
           }`}
-          href="#benefits"
-        >
-          Benefits
-        </a>
-        <a
-          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "roadmap" ? "text-[#f5c843]" : "text-gray-400"
-          }`}
-          href="#roadmap"
-        >
-          Roadmap
-        </a>
-        <a
-          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "faq" ? "text-[#f5c843]" : "text-gray-400"
-          }`}
-          href="#faq"
-        >
-          FAQ
-        </a>
-        <a
-          className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "marketplace" ? "text-[#f5c843]" : "text-gray-400"
-          }`}
-          href="#marketplace"
         >
           Marketplace
-        </a>
-        <a
+        </Link>
+        <Link
+          to="/stats"
           className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "stats" ? "text-[#f5c843]" : "text-gray-400"
+            isActive("/stats") ? "text-[#f5c843]" : "text-gray-400"
           }`}
-          href="#stats"
         >
           Stats
-        </a>
-        <a
+        </Link>
+        <Link
+          to="/tokenomics"
           className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "tokenomics" ? "text-[#f5c843]" : "text-gray-400"
+            isActive("/tokenomics") ? "text-[#f5c843]" : "text-gray-400"
           }`}
-          href="#tokenomics"
         >
           Tokenomics
-        </a>
-        <a
+        </Link>
+        <Link
+          to="/community"
           className={`text-lg font-medium hover:text-[#f5c843] transition-colors ${
-            activeSection === "community" ? "text-[#f5c843]" : "text-gray-400"
+            isActive("/community") ? "text-[#f5c843]" : "text-gray-400"
           }`}
-          href="#community"
         >
           Community
-        </a>
+        </Link>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

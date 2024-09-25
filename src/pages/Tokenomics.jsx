@@ -1,4 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "./ui/Card";
+
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/Card";
 import {
   PieChart,
   Pie,
@@ -10,7 +11,7 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/Tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/Tabs";
 import {
   Table,
   TableBody,
@@ -18,7 +19,7 @@ import {
   TableCellHeader,
   TableHeader,
   TableRow,
-} from "./ui/Table";
+} from "../components/ui/Table";
 import {
   Coins,
   Users,
@@ -197,14 +198,14 @@ export default function Tokenomics() {
                     <ResponsiveContainer width="100%" height={200}>
                       <BarChart
                         data={tokenUtility}
-                        margin={{ top: 20, right: 30, left: 20, bottom: 60 }} 
+                        margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
                       >
                         <XAxis
                           dataKey="name"
                           angle={-45}
                           textAnchor="end"
                           interval={0}
-                          tick={{ fontSize: 12, fill: "#f5c843" }} 
+                          tick={{ fontSize: 12, fill: "#f5c843" }}
                         />
                         <YAxis />
                         <Bar dataKey="value">
