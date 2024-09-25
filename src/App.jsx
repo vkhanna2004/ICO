@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css'; 
-import {Header,Home,Benefits, Faq,SubscribingForm, Team,Footer,Roadmap,Tokenomics, Stats,Dashboard} from './components/index.js'; 
+import {Header,Home,Benefits, Faq,SubscribingForm, Team,Footer,Roadmap,Tokenomics, Stats} from './components/index.js'; 
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
