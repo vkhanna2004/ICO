@@ -5,7 +5,7 @@ import {
   CardHeader,
   CardTitle,
   CardDescription,
-} from "../components/ui/card";
+} from "../components/ui/Card.jsx";
 import {
   BarChart,
   Bar,
