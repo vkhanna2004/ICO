@@ -12,7 +12,7 @@ function SubscribingForm() {
   };
 
   return (
-    <section className="w-full py-8 md:py-16 lg:py-20 bg-[#0C0C0C]">
+    <section className="w-full py-8 md:py-16 lg:py-20 ">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
