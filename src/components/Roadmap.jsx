@@ -9,7 +9,7 @@ import {
   Smartphone,
   TrendingUp,
 } from "lucide-react";
-import bgImage from "../images/gradientPurple.jpeg";
+import bgImage from "../images/bg3.jpeg";
 
 export default function Roadmap() {
   const milestones = [

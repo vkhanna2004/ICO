@@ -1,23 +1,29 @@
 import React from "react";
 import { BadgeCheck, Zap, Music } from "lucide-react";
+import bgImage from "../images/gradientPurple.jpeg";
 
 function Benefits() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       {/* Benefits */}
       <section
         id="benefits"
-        className="flex items-center justify-center w-full pt-10 md:pt-14 pb-4 md:pb-8 bg-[#0C0C0C] min-h-[40vh] sm:min-h-[50vh] mb-0" 
-
+        className="flex items-center justify-center w-full pt-10 md:pt-14 pb-4 md:pb-8 min-h-[40vh] sm:min-h-[50vh] mb-0"
       >
         <div className="container px-4 md:px-6">
-          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl text-center mb-4 text-[#f5c843]">
+          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl text-center mb-4 text-[#ffc100]">
             Benefits of Music NFTs
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <BadgeCheck className="h-10 w-10 text-[#f5c843]" />
-              <h3 className="text-lg font-bold text-[#f5c843]">
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <BadgeCheck className="h-10 w-10 text-[#ffc100]" />
+              <h3 className="text-lg font-bold text-[#ffc100]">
                 Authentic Ownership
               </h3>
               <p className="text-gray-300 text-sm text-center">
@@ -25,9 +31,9 @@ function Benefits() {
                 albums.
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <Zap className="h-10 w-10 text-[#f5c843]" />
-              <h3 className="text-lg font-bold text-[#f5c843]">
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <Zap className="h-10 w-10 text-[#ffc100]" />
+              <h3 className="text-lg font-bold text-[#ffc100]">
                 Direct Artist Support
               </h3>
               <p className="text-gray-300 text-sm text-center">
@@ -35,9 +41,9 @@ function Benefits() {
                 compensation for their work.
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <Music className="h-10 w-10 text-[#f5c843]" />
-              <h3 className="text-lg font-bold text-[#f5c843]">
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <Music className="h-10 w-10 text-[#ffc100]" />
+              <h3 className="text-lg font-bold text-[#ffc100]">
                 Exclusive Content
               </h3>
               <p className="text-gray-300 text-sm text-center">
@@ -49,17 +55,15 @@ function Benefits() {
       </section>
 
       {/* How It Works */}
-      <section
-      className="flex items-center justify-center w-full pt-4 md:pt-8 pb-10 md:pb-14 bg-[#0C0C0C] min-h-[40vh] sm:min-h-[50vh]"
-      >
+      <section className="flex items-center justify-center w-full pt-4 md:pt-8 pb-10 md:pb-14 min-h-[40vh] sm:min-h-[50vh]">
         <div className="container px-4 md:px-6 mx-auto">
-          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl text-center mb-4 text-[#f5c843]">
+          <h2 className="text-2xl font-bold tracking-tighter sm:text-4xl text-center mb-4 text-[#ffc100]">
             How It Works
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <span className="text-2xl font-bold text-[#f5c843]">1</span>
-              <h3 className="text-lg font-bold text-[#f5c843]">
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <span className="text-2xl font-bold text-[#ffc100]">1</span>
+              <h3 className="text-lg font-bold text-[#ffc100]">
                 Artist Mints NFT
               </h3>
               <p className="text-gray-300 text-sm text-center">
@@ -67,9 +71,9 @@ function Benefits() {
                 platform.
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <span className="text-2xl font-bold text-[#f5c843]">2</span>
-              <h3 className="text-lg font-bold text-[#f5c843]">
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <span className="text-2xl font-bold text-[#ffc100]">2</span>
+              <h3 className="text-lg font-bold text-[#ffc100]">
                 Fans Purchase
               </h3>
               <p className="text-gray-300 text-sm text-center">
@@ -77,9 +81,9 @@ function Benefits() {
                 NFTs.
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border border-[#f5c843]/20 p-4 rounded-lg w-full max-w-xs">
-              <span className="text-2xl font-bold text-[#f5c843]">3</span>
-              <h3 className="text-lg font-bold text-[#f5c843]">Enjoy & Earn</h3>
+            <div className="flex flex-col items-center space-y-2 bg-[#1c1132]/50 border border-[#ffc100]/30 p-4 rounded-lg w-full max-w-xs">
+              <span className="text-2xl font-bold text-[#ffc100]">3</span>
+              <h3 className="text-lg font-bold text-[#ffc100]">Enjoy & Earn</h3>
               <p className="text-gray-300 text-sm text-center">
                 Owners can listen to their NFTs and potentially earn from
                 royalties and resales.
