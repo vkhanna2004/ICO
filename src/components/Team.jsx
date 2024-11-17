@@ -1,9 +1,10 @@
 import React from "react";
+import bgImage from "../images/gradientPurple1.jpeg";
 
 function Team() {
   const member = {
-    name: "John Doe",
-    role: "Co-Founder & CEO",
+    name: "Maninder Hooda",
+    role: "CEO, CFAUS Social India Services Pvt. Ltd.",
     description:
       "John is the visionary behind the company, leading the team with over 10 years of experience in the industry. He believes in pushing the boundaries of technology to create innovative solutions for the future of music.",
     imageUrl:
@@ -11,11 +12,17 @@ function Team() {
   };
 
   return (
-    <div className="w-full text-center bg-[#0C0C0C]">
+    <div className="w-full text-center"
+    style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+    >
       <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-[#f5c843]">
         Meet Our Team
       </h2>
-      <div className="container flex flex-col-reverse md:flex-row items-center justify-between py-10 md:px-20 px-6">
+      <div className="container flex flex-col-reverse md:flex-row items-center justify-between py-4 md:px-20 px-6">
         <div className="w-[300px] h-[300px] flex-shrink-0 mb-6 md:mb-0 mx-auto md:mx-0 md:mr-12">
           <img
             src={member.imageUrl}

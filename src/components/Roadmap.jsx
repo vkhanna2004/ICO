@@ -82,7 +82,7 @@ export default function Roadmap() {
               } items-center relative`}
             >
               <Card
-                className={`w-full max-w-md bg-[#1c1132] backdrop-blur-md text-white shadow-md border border-gray-600 ${
+                className={`w-full max-w-md bg-blue-950/90 backdrop-blur-md text-white shadow-md border border-gray-600 ${
                   index % 2 === 0 ? "mr-auto" : "ml-auto"
                 }`}
               >

@@ -1,19 +1,26 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react"; 
+import bgImage from "../images/gradientPurple.jpeg";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     if (activeIndex === index) {
-      setActiveIndex(null); // Close if the same item is clicked
+      setActiveIndex(null);
     } else {
-      setActiveIndex(index); // Open the clicked item
+      setActiveIndex(index); 
     }
   };
 
   return (
-    <section id="faq" className="w-full py-12 md:py-24 lg:py-32 bg-[#0C0C0C] ">
+    <section id="faq" className="w-full py-12 md:py-24 lg:py-32 "
+    style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+    >
       <div className="container px-4 md:px-6 mx-auto">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-[#f5c843]">
           Frequently Asked Questions
