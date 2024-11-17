@@ -72,7 +72,6 @@ export default function Roadmap() {
           Roadmap
         </h2>
         <div className="relative">
-          {/* White vertical line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-white shadow-[0_0_15px_#f5c843]"></div>
 
           {milestones.map((milestone, index) => (
@@ -83,7 +82,7 @@ export default function Roadmap() {
               } items-center relative`}
             >
               <Card
-                className={`w-full max-w-md bg-[#1c1132]/70 backdrop-blur-md text-white shadow-md border border-gray-600 ${
+                className={`w-full max-w-md bg-[#1c1132] backdrop-blur-md text-white shadow-md border border-gray-600 ${
                   index % 2 === 0 ? "mr-auto" : "ml-auto"
                 }`}
               >
