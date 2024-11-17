@@ -1,5 +1,5 @@
 export function Card({ children, className }) {
-    return <div className={`rounded-lg shadow bg-white ${className}`}>{children}</div>;
+    return <div className={`rounded-lg shadow ${className}`}>{children}</div>;
   }
   
   export function CardHeader({ children, className }) {
