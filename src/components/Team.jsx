@@ -38,7 +38,7 @@ function Team() {
           <p className="text-2xl text-gray-300 mt-2 font-semibold">
             {member.role}
           </p>
-          <p className="text-lg text-gray-400 mt-4">{member.description}</p>
+          <p className="text-lg text-gray-300 mt-4">{member.description}</p>
         </div>
       </div>
     </div>
